@@ -31,7 +31,7 @@ const Blogs: React.FC = () =>{
       <section>
         {recentBlog ? (
           <Banner
-          title={'Blogs'}
+          head={'Blogs'}
           subTitle={'The Value of Business Consulting:'}
           desc={"Participate in Kang Consulting's webinar, 'Harnessing Data Analytics for Business Growth,' to explore how data visualization, predictive analytics, and performance measurement can enhance your business success. Acquire practical insights and hands-on experience from expert James Turner."}
           img={"https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg"}

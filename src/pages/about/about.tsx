@@ -11,7 +11,7 @@ const About: React.FC = () => {
     <div className="about-container">
       <section>
         <Banner
-          title={'About'}
+          head={'About'}
           subTitle={'We support our clients in sustaining a focused vision.'}
           desc={
             'We deliver a strategic framework that keeps clients centered on their long-term goals.'
@@ -91,7 +91,7 @@ const About: React.FC = () => {
 
       <section>
         <Banner
-          title={'Solution'}
+          head={'Solution'}
           subTitle={'Leading-Edge Solutions for Modern Enterprises'}
           desc={
             'Offering cutting-edge strategies and sophisticated solutions to achieve success in the ever-changing business landscape. Empowering contemporary enterprises with the tools to lead the way.'

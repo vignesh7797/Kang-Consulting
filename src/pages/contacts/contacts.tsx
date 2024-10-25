@@ -8,7 +8,7 @@ const Contacts:React.FC = () =>{
     <div>
       <section>
         <Banner
-          title={'Contact'}
+          head={'Contact'}
           subTitle={'Always searching for improved solutions.'}
           desc={
             "Feel free to get in touch for questions, assistance, or to book a consultation. We're ready to support you."

@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import './banner.css'
 
-const Banner:React.FC = ({title, subTitle, desc, img, btnLabel='Know More', btnRoute='/about'}) =>{
+const Banner:React.FC<any> = ({head, subTitle, desc, img, btnLabel='Know More', btnRoute='/about'}) =>{
   return(
     <div className="banner">
         <div data-aos="fade-left" className="banner-content">
           <p className="title-sm">
-             {title}
+             {head}
           </p>
           <p className="text-3xl md:text-4xl lg:text-5xl text-white font-bold mt-4 lg:mt-8">
              {subTitle}

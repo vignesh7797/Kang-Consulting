@@ -11,7 +11,7 @@ const Service:React.FC = () =>{
     <div className="services-container">
       <section>
         <Banner
-          title={'Service'}
+          head={'Service'}
           subTitle={'Discover how our services can enhance your business potential.'}
           desc={
             'Unlock new opportunities and achieve greater success with our expert services.'

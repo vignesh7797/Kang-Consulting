@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <div className="home-container">
       <Banner
-        title={'Empower Your Brand'}
+        head={'Empower Your Brand'}
         subTitle={
           'Take Your Business to New Heights with Website Consulting Expertise'
         }

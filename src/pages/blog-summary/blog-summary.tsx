@@ -30,7 +30,7 @@ const BlogSummary: React.FC = () =>{
       <section>
       {data ? (
           <Banner
-          title={'Blogs'}
+          head={'Blogs'}
           subTitle={data.title}
           desc={""}
           img={"https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg"}
