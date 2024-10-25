@@ -1,5 +1,6 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactElement, ReactNode, useState } from "react";
 import './accodion.css';
+import AccordionTab from "../accordion-tab/accordion-tab";
 
 interface AccodrionProps {
   activeIndex?:number;
@@ -11,15 +12,20 @@ const Accordion:React.FC<AccodrionProps> = ({activeIndex = -1, children}) => {
 
   const [activeTab, setActiveTab] = useState(activeIndex);
 
-  const onSelectTab = (e:number) =>{
+  const onSelectedTab:any = (e:number) =>{
     setActiveTab(e);
   }
+
+  const renderChildWithProps = (child: ReactElement) => {
+    return React.cloneElement(child, { onSelectTab: onSelectedTab });
+  };
 
   return(
     <div className="accordion-wrapper">
       {tabsList.map((tab, index) => (
         <div key={index}>
-          {React.isValidElement(tab) && React.cloneElement(tab,  { onSelect: onSelectTab, tabIndex:index, isActive:index == activeTab })}
+          {React.isValidElement(tab) && React.cloneElement(tab, { onSelectTab: onSelectedTab, tabIndex:index, isActive:index == activeTab })}
+          {/* {renderChildWithProps(<AccordionTab children={tab} onSelectTab={onSelectedTab} tabIndex={index} isActive={index == activeTab} />)} */}
         </div>
       ))}
     </div>

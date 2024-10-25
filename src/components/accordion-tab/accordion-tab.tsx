@@ -5,19 +5,21 @@ interface AccordionTabProps{
   tabIndex?: number;
   header?: string;
   isActive?:boolean;
-  onSelect: (index?:number) => void;
+  onSelectTab?: (index?:number) => {} ;
 }
 
-const AccordionTab:React.FC<AccordionTabProps> = ({children, header, tabIndex, onSelect, isActive}) =>{
-  const onSelectTab = () =>{
-    onSelect(isActive ? -1 : tabIndex);
+const AccordionTab:React.FC<AccordionTabProps> = ({children, header, onSelectTab, tabIndex, isActive}) =>{
+  const onSelect= () =>{
+    if(onSelectTab){
+      onSelectTab(isActive ? -1 : tabIndex);
+    }
   }
   useEffect(() =>{
 
   })
   return (
     <div className="accordionTab-wrapper">
-      <div className="accordionTab-header" onClick={onSelectTab}>
+      <div className="accordionTab-header" onClick={onSelect}>
         {header}
         {isActive ? (
           <span className="material-icons">remove</span>
