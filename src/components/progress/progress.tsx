@@ -1,6 +1,6 @@
 import './progress.css'
 
-const Progress: React.FC<any> = ({percent = 80, label}) => {
+const Progress: React.FC = ({percent = 80, label}) => {
   return (
     <div className="progress-container">
       <p className="progress-label">
