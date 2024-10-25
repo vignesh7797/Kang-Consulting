@@ -15,12 +15,12 @@ interface Blog {
 }
 
 const Blogs: React.FC = () =>{
-
+  const db:any = data;
   const [blogData, setBlogData] = useState<Blog[]>([]);
   const [recentBlog, setRecentBLog] = useState<Blog>();
 
   useEffect(() => {
-    const blogsArray: Blog[] = data['default'] as Blog[];
+    const blogsArray: Blog[] = db['default'] as Blog[];
     const sortedData = blogsArray?.sort((a:any, b:any) => new Date(b.date).getDate() - new Date(a.date).getDate())
       setBlogData(sortedData);
       setRecentBLog(sortedData[0]);

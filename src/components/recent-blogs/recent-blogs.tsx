@@ -16,8 +16,8 @@ const RecentBlogs: React.FC = () =>{
   const [blogData, setBlogData] = useState<Blog[]>([]);
 
   useEffect(() => {
-
-    const blogsArray: Blog[] = data['default'] as Blog[];
+    const db:any = data;
+    const blogsArray: Blog[] = db.default as Blog[];
     const sortedData = blogsArray?.sort((a:any, b:any) => new Date(b.date).getDate() - new Date(a.date).getDate())
       .slice(0, 3);
       setBlogData(sortedData);
