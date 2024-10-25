@@ -1,0 +1,30 @@
+.progress-container{
+  @apply w-80 mb-4;
+}
+
+.progress-track{
+  @apply h-2.5 bg-gray-light w-full overflow-hidden relative;
+}
+
+.progress-bar{
+  @apply h-full bg-primary;
+
+  animation: progress 2s linear;
+}
+
+.progress-label{
+  @apply text-secondary font-semibold py-2;
+}
+
+.progress-data{
+  @apply absolute right-0 -top-[1px] text-[10px] h-full font-semibold;
+}
+
+@keyframes progress{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

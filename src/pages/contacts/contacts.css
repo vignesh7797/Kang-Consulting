@@ -1,0 +1,15 @@
+.contact-item{
+  @apply flex flex-col gap-4 items-center; 
+}
+
+.contact-label{
+  @apply text-center text-secondary text-xl font-bold;
+}
+
+.contact-detail{
+  @apply text-center text-sec-light whitespace-pre-wrap;
+}
+
+.contact-link{
+  @apply text-center text-sec-light underline;
+}

@@ -1,0 +1,15 @@
+.navList{
+  @apply w-full pt-12 lg:pt-0 lg:flex gap-x-4 items-center ;
+}
+
+.link{
+  @apply my-0 mx-auto block text-white px-3 py-5 lg:py-3 text-center text-lg w-full md:w-3/5 lg:w-fit border-b-2 border-secondary transition-all font-semibold;
+}
+
+.link:hover{
+  @apply text-primary border-primary;
+}
+
+.link.active{
+  @apply border-primary;
+}

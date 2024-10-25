@@ -1,0 +1,27 @@
+.advice-container{
+  @apply bg-secondary flex flex-col md:flex-row;
+}
+
+.advice-banner{
+  @apply bg-[url('https://cdn.pixabay.com/photo/2024/06/14/06/27/office-8828993_1280.jpg')] bg-cover bg-no-repeat w-full md:w-1/2 h-96 md:h-auto;
+}
+
+.advice-content{
+  @apply w-full md:w-1/2 p-4 lg:p-12;
+}
+
+.advice-item{
+  @apply flex items-start gap-4 w-full lg:w-10/12 mt-12;
+}
+
+.advice-item-icon span{
+  @apply text-primary text-3xl md:text-4xl;
+}
+
+.advice-item-title{
+  @apply font-bold text-lg md:text-2xl text-white;
+}
+
+.advice-item-content{
+  @apply text-gray mt-3 text-sm md:text-base;
+}

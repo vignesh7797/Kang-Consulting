@@ -1,0 +1,26 @@
+.summary-content{
+  @apply p-8 md:p-20 flex flex-col md:flex-row md:w-[60rem] mx-auto my-0 gap-10;
+}
+.share-group{
+  @apply bg-white rounded-lg h-fit;
+}
+
+.share-logo{
+  @apply w-10 h-10 p-2 text-white bg-secondary rounded-t-lg; 
+}
+
+.share-item{
+  @apply w-10 h-10 block p-2 hover:bg-primary;
+}
+
+.share-item:nth-child(4){
+  @apply rounded-b-lg;
+}
+
+.share-item img{
+  @apply w-full;
+}
+
+.share-item:hover img{
+  @apply brightness-[20];
+}

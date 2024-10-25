@@ -1,0 +1,60 @@
+.sector-container{
+  @apply p-4 md:p-12 lg:p-20;
+}
+
+.sector-list{
+  @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8;
+}
+
+.sector-item{
+  @apply aspect-square bg-secondary overflow-hidden bg-cover bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2015/08/11/20/52/motherboard-885177_1280.jpg')];
+}
+
+.sector-item:nth-child(2){
+  @apply bg-[url('https://media.istockphoto.com/id/1496103633/photo/doctor-woman-and-tablet-in-hospital-with-holographic-ux-for-telehealth-medical-innovation-and.jpg?s=1024x1024&w=is&k=20&c=4gZT-59sdW1Yup-1BExfTY3b2ohOjSfEg6K-pCDdq8E=')]
+}
+
+.sector-item:nth-child(3){
+  @apply bg-[url('https://cdn.pixabay.com/photo/2023/08/22/11/57/finance-8206242_1280.jpg')];
+}
+
+.sector-item:nth-child(4){
+  @apply bg-[url('https://cdn.pixabay.com/photo/2020/11/12/16/58/worker-5736096_1280.jpg')];
+}
+
+.sector-item:nth-child(5){
+  @apply bg-[url('https://cdn.pixabay.com/photo/2016/10/29/21/11/sign-1781609_1280.jpg')];
+}
+
+.sector-item:nth-child(6){
+  @apply bg-[url('https://cdn.pixabay.com/photo/2021/08/10/10/06/pinwheels-6535595_1280.jpg')];
+}
+
+.sector-item:nth-child(7){
+  @apply bg-[url('https://cdn.pixabay.com/photo/2021/10/07/15/23/real-estate-6688945_1280.jpg')];
+}
+
+.sector-item:nth-child(8){
+  @apply bg-[url('https://cdn.pixabay.com/photo/2015/07/28/22/05/child-865116_1280.jpg')];
+}
+
+.mask{
+  @apply bg-sec-50 w-full h-full flex flex-row items-end transition-all duration-300 hover:opacity-0;
+}
+
+.sector-item-label{
+  @apply text-white text-xl font-semibold p-4;
+}
+
+
+.solution-container{
+  @apply bg-gradient-to-r from-sec-dark from-5% via-secondary via-25% to-sec-dark to-90% p-0 md:p-12 lg:p-20 flex flex-col-reverse md:flex-row justify-between;
+}
+
+.solution-content{
+  @apply w-full md:w-1/2 p-8 md:p-0;
+}
+
+.solution-banner{
+  @apply w-full h-[30rem] md:w-[30%] md:h-auto bg-cover bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2016/07/18/10/55/asian-1525673_1280.jpg')];
+}

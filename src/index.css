@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-light;
+}
+
+.title-sm{
+  @apply text-primary font-medium text-xl;
+}
+
+.title-sm-gray{
+  @apply text-sec-light font-medium text-xl;
+}
+
+.title-lg{
+  @apply text-5xl font-bold my-4;
+}
+
+.navBtn{
+  @apply inline-block mt-2 border-[2px] border-primary bg-primary hover:bg-transparent text-secondary hover:text-primary text-lg font-semibold px-[2rem] py-[1rem];
+}
+
+.prim-btn{
+  @apply bg-primary hover:bg-secondary text-secondary hover:text-primary text-lg font-semibold px-[2rem] py-[1rem] transition-all;
+}

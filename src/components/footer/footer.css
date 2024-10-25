@@ -1,0 +1,88 @@
+.footer{
+  @apply bg-secondary w-full p-10 pb-2;
+}
+
+.footer-top{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.footer hr{
+  @apply mt-10 mb-4 text-gray;
+}
+
+.footer-bottom{
+  @apply p-1 flex flex-wrap;
+}
+
+.footer-bottom p{
+  @apply flex text-gray;
+}
+
+.footer-bottom a{
+  @apply underline text-gray ml-2;
+}
+
+.footer-bottom span{
+  @apply text-primary ml-2;
+}
+
+.subscribe{
+  @apply mt-8;
+}
+
+.subscribe h6{
+  @apply text-white font-bold;
+}
+
+.social-media{
+  @apply flex items-center gap-2 mt-4;
+}
+
+.social-item{
+  @apply bg-white rounded-full p-1.5;
+}
+
+.social-item img{
+  @apply w-5;
+}
+
+.link-footer{
+  @apply pt-4;
+}
+
+.subscribe-footer{
+  @apply col-span-1;
+}
+
+.link-footer h6,
+.subscribe-footer h6{
+  @apply text-white font-bold p-2 text-xl;
+}
+
+.quick-link{
+  @apply w-fit;
+}
+
+.quick-link .link{
+  @apply border-0 text-gray hover:text-primary text-base p-1;
+}
+
+.quick-link .active{
+  @apply text-primary;
+}
+
+.form-grp{
+  @apply flex items-center justify-start p-2;
+}
+
+.form-input{
+  @apply h-10 w-[60%] p-4 focus:outline-0 focus:ring-1 ring-primary text-secondary;
+}
+
+.form-btn{
+  @apply h-10 bg-primary text-secondary font-semibold border-2 border-primary px-4;
+}
+
+.contact-footer{
+  @apply grid grid-rows-2 grid-flow-col gap-4;
+}

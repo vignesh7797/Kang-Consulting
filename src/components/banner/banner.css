@@ -1,0 +1,11 @@
+.banner{
+  @apply flex flex-col-reverse lg:flex-row gap-8 items-center justify-around w-full px-0 lg:px-20 pt-16 lg:pt-24 pb-5 h-[50rem] lg:h-[600px] bg-gradient-to-r from-sec-dark from-5% via-secondary via-25% to-sec-dark to-90%;
+}
+
+.banner-content{
+  @apply w-full px-4 lg:w-[30rem];
+}
+
+.banner-image{
+  @apply bg-cover bg-no-repeat bg-center w-full lg:w-[30rem] h-full lg:h-[20rem];
+}

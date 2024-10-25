@@ -1,0 +1,11 @@
+.blogList-container{
+  @apply p-8 md:p-20;
+}
+
+.blogList{
+  @apply flex flex-col md:flex-row flex-wrap items-center justify-center gap-8;
+}
+
+.readmore{
+  @apply flex items-center mt-2 text-sec-light cursor-pointer;
+}

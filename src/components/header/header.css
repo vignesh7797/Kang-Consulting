@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-bar{
+  @apply px-3 lg:hidden relative h-8 w-8 mx-4;
+}
+
+.bar-1{
+  @apply block h-[2px] w-[25px] rounded-lg bg-white mb-1 transition-all;
+}
+
+.bar-1.open{
+  @apply absolute rotate-45 w-[20px] top-3;
+}
+
+.bar-2{
+  @apply block h-[2px] w-[20px] rounded-lg bg-white mb-1 transition-all;
+}
+
+.bar-2.open{
+  @apply absolute opacity-0;
+}
+
+.bar-3{
+  @apply block h-[2px] w-[15px] rounded-lg bg-white transition-all;
+}
+
+.bar-3.open{
+  @apply absolute -rotate-45 w-[20px] top-1/2;
+}
+
+.p-sidebar{
+  @apply bg-secondary mt-32 md:mt-0 w-screen md:w-[400px];
+}

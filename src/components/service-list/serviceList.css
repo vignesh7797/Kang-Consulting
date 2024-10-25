@@ -1,0 +1,20 @@
+
+.service-item{
+  @apply bg-white p-8 lg:p-12 hover:bg-secondary cursor-pointer transition-all duration-500;
+}
+
+.service-item-icon{
+    @apply text-6xl text-secondary group-hover:text-white transition-all duration-500;
+}
+
+.service-item-title{
+  @apply text-2xl mt-8 font-semibold text-secondary group-hover:text-white transition-all duration-500;
+}
+
+.service-item-content{
+  @apply text-gray mt-6 transition-all duration-500;
+}
+
+.service-item-btn{
+  @apply flex items-center mt-8 font-semibold text-lg px-4 py-2 border-2 border-gray text-secondary group-hover:bg-primary group-hover:border-primary transition-all duration-500;
+}

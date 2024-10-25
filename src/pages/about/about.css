@@ -1,0 +1,39 @@
+.about-container{
+  @apply w-full bg-light overflow-x-hidden;
+}
+
+.consulting{
+  @apply bg-white p-10;
+}
+
+.consult-item{
+  @apply p-5 flex flex-col items-center;
+}
+
+.consult-item-logo{
+  @apply text-secondary;
+}
+
+.consult-item-logo span{
+  @apply text-5xl;
+}
+
+.consult-item-title{
+  @apply text-secondary font-bold text-xl;
+}
+
+.consult-item-desc{
+  @apply text-gray mt-5 text-center;
+}
+
+.business-level{
+  @apply p-8 md:p-20 bg-white flex flex-col md:flex-row gap-20 items-center justify-center;
+}
+
+.business-banner{
+  @apply bg-[url('https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg')] bg-cover bg-center aspect-square h-96;
+}
+
+.business-contant{
+  @apply w-full md:w-1/2;
+}

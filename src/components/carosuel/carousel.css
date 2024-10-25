@@ -1,0 +1,52 @@
+.carousel-container{
+  @apply p-0 md:p-12 lg:p-20;
+}
+
+.carosuel-item{
+  @apply p-8 md:p-12 lg:p-20 bg-white shadow-lg flex flex-col-reverse md:flex-row justify-between items-center;
+}
+
+.carosuel-img{
+  @apply w-full h-[20rem] md:h-[25rem] md:w-[40%] bg-cover bg-no-repeat bg-center;
+}
+
+.carousel-item:nth-child(1)
+.carosuel-img{
+  @apply bg-[url('https://cdn.pixabay.com/photo/2024/06/15/17/16/man-8831979_1280.jpg')];
+}
+
+.carousel-item:nth-child(2)
+.carosuel-img{
+  @apply bg-[url('https://cdn.pixabay.com/photo/2023/04/03/04/48/woman-7895953_1280.jpg')];
+}
+
+.carousel-item:nth-child(3)
+.carosuel-img{
+  @apply bg-[url('https://cdn.pixabay.com/photo/2015/06/11/11/39/businessman-805767_1280.jpg')]
+}
+
+.carousel-item:nth-child(4)
+.carosuel-img{
+  @apply bg-[url('https://cdn.pixabay.com/photo/2015/03/28/16/29/business-696076_1280.jpg')]
+}
+
+.carosuel-content{
+  @apply w-full md:w-1/2;
+}
+
+.carousel-indicators{
+  @apply -bottom-16;
+}
+
+.carousel-indicators button{
+  width: 15px !important;
+  height: 15px !important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+  border-radius: 100% !important;
+  background-color: #4f6b7b !important;
+}
+
+.carousel-indicators .active{
+  background-color: #032B43 !important;
+}

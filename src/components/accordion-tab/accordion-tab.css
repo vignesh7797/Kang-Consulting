@@ -1,0 +1,21 @@
+.accordionTab-wrapper{
+  @apply mb-4;
+}
+
+.accordionTab-header{
+  @apply p-2 font-bold text-xl flex text-secondary justify-between border-b-[1px] border-sec-light cursor-pointer;
+}
+
+.accordionTab-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 10px;
+  
+  @apply text-sec-light text-lg;
+}
+
+.accordionTab-content.open {
+  max-height: 200px; 
+  padding: 10px;
+}

@@ -1,0 +1,15 @@
+.services-container{
+  @apply w-full;
+}
+
+.solutions-container{
+  @apply bg-light p-8 md:p-12 lg:p-20 flex flex-col md:flex-row justify-between;
+}
+
+.solutions-content{
+  @apply w-full md:w-1/2 p-8 md:p-0;
+}
+
+.solutions-banner{
+  @apply w-full h-[30rem] md:w-[30%] md:h-auto bg-cover bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2024/08/03/10/09/business-8941855_1280.jpg')];
+}

@@ -1,0 +1,27 @@
+.contact-form{
+  @apply flex flex-col md:flex-row p-8 md:p-20 md:gap-6;
+}
+
+.form-banner{
+  @apply bg-cover bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2021/07/15/08/04/man-6467779_1280.jpg')] w-full min-h-[28rem] lg:w-2/5;
+}
+
+.form-panel{
+  @apply bg-white p-10 w-full lg:w-3/5;
+}
+
+.input-grp{
+  @apply flex flex-col gap-2;
+}
+
+.input-label{
+  @apply font-semibold text-lg text-sec-dark;
+}
+
+.input-box{
+  @apply focus:ring-0 focus:outline-0 h-10 w-full p-3 border-[1.5px] border-sec-dark/30 focus:border-sec-dark/100;
+}
+
+.input-area{
+  @apply focus:ring-0 focus:outline-0 min-h-16 w-full p-3 border-[1.5px] border-sec-dark/30 focus:border-sec-dark/100;
+}
