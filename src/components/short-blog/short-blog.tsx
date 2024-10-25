@@ -26,16 +26,16 @@ const ShortBlog: React.FC<{data:Blog}> = ({data}) =>{
   return (
     <div>
       {blog ? (
-        <div className="w-96 bg-white shadow group overflow-hidden">
-          <div className="w-full h-72 overflow-hidden">
-            <img className="w-full h-full group-hover:scale-110 transition-all duration-700" src={data.imageUrl} alt="" />
+        <div onClick={goToSummary} className="w-full sm:w-80 md:w-96 bg-white shadow group overflow-hidden">
+          <div className="w-full h-60 md:h-72 overflow-hidden">
+            <img className="w-full h-fuxll group-hover:scale-110 transition-all duration-700" src={data.imageUrl} alt="" />
           </div>
           <div className="p-3">
             <p className="text-gray">{data.date}</p>
             <h4 className="mt-2 font-bold text-secondary text-xl">
               {data.title}
             </h4>
-            <a onClick={goToSummary} className="readmore">Read more &nbsp;<span className="text-sm material-icons-outlined group-hover:ml-2 transition-all duration-500">east</span>
+            <a className="readmore">Read more &nbsp;<span className="text-sm material-icons-outlined group-hover:ml-2 transition-all duration-500">east</span>
             </a>
           </div>
         </div>

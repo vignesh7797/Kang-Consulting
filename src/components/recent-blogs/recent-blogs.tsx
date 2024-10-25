@@ -24,7 +24,7 @@ const RecentBlogs: React.FC = () =>{
   }, []);
 
   return (
-    <div className="my-8">
+    <div className="my-8 p-8 md:p-2">
       <p className="title-sm-gray text-center">Blogs</p>
       <p className="title-lg text-center my-12">Recent Blogs</p>
     {blogData.length > 0 ? (
