@@ -12,20 +12,24 @@ const Accordion:React.FC<AccodrionProps> = ({activeIndex = -1, children}) => {
 
   const [activeTab, setActiveTab] = useState(activeIndex);
 
-  const onSelectedTab:any = (e:number) =>{
-    setActiveTab(e);
+  const onSelectedTab:any = (e:any) =>{
+    if(e.tabIndex == activeTab){
+      setActiveTab(-1)
+    }else{
+      setActiveTab(e.index)
+    }
   }
 
-  const renderChildWithProps = (child: ReactElement) => {
-    return React.cloneElement(child, { onSelectTab: onSelectedTab });
+  const renderChildWithProps = (child: ReactElement<React.ComponentProps<typeof AccordionTab>>) => {
+    return React.cloneElement(child, { onSelectTab: onSelectedTab(child.props) });
   };
 
   return(
     <div className="accordion-wrapper">
       {tabsList.map((tab, index) => (
         <div key={index}>
-          {React.isValidElement(tab) && React.cloneElement(tab, { onSelectTab: onSelectedTab, tabIndex:index, isActive:index == activeTab })}
-          {/* {renderChildWithProps(<AccordionTab children={tab} onSelectTab={onSelectedTab} tabIndex={index} isActive={index == activeTab} />)} */}
+          {/* {React.isValidElement(tab) && React.cloneElement(tab, { onSelectTab: onSelectedTab(tab), tabIndex:index, isActive:index == activeTab })} */}
+          {renderChildWithProps(<AccordionTab children={tab} onSelectTab={onSelectedTab} tabIndex={index} isActive={index == activeTab} />)}
         </div>
       ))}
     </div>
