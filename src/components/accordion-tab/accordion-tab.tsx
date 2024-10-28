@@ -2,24 +2,24 @@ import { useEffect } from 'react';
 import './accordion-tab.css';
 interface AccordionTabProps{
   children: React.ReactNode;
-  tabIndex?: number;
+  index?: number;
   header?: string;
   isActive?:boolean;
-  onSelectTab?: () => void ;
+  onTabClick?: (index:number) => void ;
 }
 
-const AccordionTab:React.FC<AccordionTabProps> = ({children, header, onSelectTab, tabIndex, isActive}) =>{
-  // const onSelect= () =>{
-  //   if(onSelectTab){
-  //     onSelectTab();
-  //   }
-  // }
+const AccordionTab:React.FC<AccordionTabProps> = ({children, header, onTabClick, index, isActive}) =>{
+  const handleClick = () => {
+    if (onTabClick && index !== undefined) {
+      onTabClick(index);
+    }
+  };
   useEffect(() =>{
 
   })
   return (
     <div className="accordionTab-wrapper">
-      <div className="accordionTab-header" onClick={onSelectTab}>
+      <div className="accordionTab-header" onClick={handleClick}>
         {header}
         {isActive ? (
           <span className="material-icons">remove</span>
