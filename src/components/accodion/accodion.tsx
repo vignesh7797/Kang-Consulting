@@ -1,6 +1,5 @@
-import React, { ReactElement, ReactNode, useState } from "react";
+import React, { ReactElement, useState } from "react";
 import './accodion.css';
-import AccordionTab from "../accordion-tab/accordion-tab";
 
 interface AccordionTabProps{
   children: React.ReactNode;
