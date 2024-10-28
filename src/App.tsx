@@ -1,5 +1,3 @@
-import reactLogo from './assets/logo.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header/header'
 import { PrimeReactProvider } from 'primereact/api';
@@ -17,8 +15,8 @@ import Blogs from './pages/blog/blog';
 AOS.init({
   easing: 'ease-in-sine',
   delay: 0,
-  offset: '50',
-  duration: '500',
+  offset: 50,
+  duration: 500,
 });
 
 const App: React.FC = () =>{
