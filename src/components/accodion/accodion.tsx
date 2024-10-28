@@ -2,9 +2,17 @@ import React, { ReactElement, ReactNode, useState } from "react";
 import './accodion.css';
 import AccordionTab from "../accordion-tab/accordion-tab";
 
+interface AccordionTabProps{
+  children: React.ReactNode;
+  index?: number;
+  header?: string;
+  isActive?:boolean;
+  onTabClick?: (index:number) => void ;
+}
+
 interface AccodrionProps {
   activeIndex?:number;
-  children:ReactNode;
+  children: ReactElement<AccordionTabProps> | ReactElement<AccordionTabProps>[];
 }
 
 const Accordion:React.FC<AccodrionProps> = ({activeIndex = -1, children}) => {
@@ -40,8 +48,9 @@ const Accordion:React.FC<AccodrionProps> = ({activeIndex = -1, children}) => {
             isActive: activeTab === index,
             index,
             onTabClick: handleTabClick,
-          })
+          });
         }
+        return child;
       })}
     </div>
   )
